@@ -1,0 +1,105 @@
+.friend {
+  display: flex;
+  border-bottom: 2px solid white;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 3px;
+  height: 130px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.friend:last-child {
+  border-bottom: none;
+}
+
+.user {
+  display: flex;
+  width: 25%;
+  height: auto;
+  align-items: center;
+  justify-content: left;
+}
+
+.circle {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: 2px solid white;
+}
+
+.profile {
+  background-image: url('../assets/default.jpg');
+  width: 50px;
+}
+
+.name {
+  font-size: 23px;
+  font-weight: bold;
+  padding-left: 30px;
+}
+
+.track {
+  height: 100%;
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.trackImg {
+  border-radius: 3px 0px 0px 3px;
+}
+
+.trackCard {
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.1);
+  height: 70%;
+  width: 300px;
+  margin: auto;
+  border-radius: 3px;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+}
+
+.trackCard:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.trackDetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.trackName {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.artistName {
+  font-size: 12px;
+}
+
+.contextName {
+  font-size: 12px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.playing {
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+}

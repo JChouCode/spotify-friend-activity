@@ -1,0 +1,107 @@
+{
+  "friends": [
+    {
+      "timestamp": 1644447477614,
+      "user": {
+        "uri": "spotify:user:1282080912",
+        "name": "Johnny Wang",
+        "imageUrl": "https://i.scdn.co/image/ab67757000003b82ebc6571c3869ecd02d7d0c65"
+      },
+      "track": {
+        "uri": "spotify:track:2HSmyk2qMN8WQjuGhaQgCk",
+        "name": "Champagne Poetry",
+        "imageUrl": "http://i.scdn.co/image/ab67616d0000b273cd945b4e3de57edd28481a3f",
+        "album": {
+          "uri": "spotify:album:3SpBlxme9WbeQdI9kx7KAV",
+          "name": "Certified Lover Boy"
+        },
+        "artist": {
+          "uri": "spotify:artist:3TVXtAsR1Inumwj472S9r4",
+          "name": "Drake"
+        },
+        "context": {
+          "uri": "spotify:album:3SpBlxme9WbeQdI9kx7KAV",
+          "name": "Certified Lover Boy",
+          "index": 0
+        }
+      }
+    },
+    {
+      "timestamp": 1644903918898,
+      "user": {
+        "uri": "spotify:user:1210113919",
+        "name": "yichen",
+        "imageUrl": "https://i.scdn.co/image/ab67757000003b82edf9e8ba2b03b2cc69115a8c"
+      },
+      "track": {
+        "uri": "spotify:track:6zpCJDhdpHPZCcFCJZDqX5",
+        "name": "High You Are",
+        "imageUrl": "http://i.scdn.co/image/ab67616d0000b2734c6214c61e3f98e5cbe3913a",
+        "album": {
+          "uri": "spotify:album:5FAFTIaf9DBYcmDkYB3F3g",
+          "name": "High You Are (Remixes)"
+        },
+        "artist": {
+          "uri": "spotify:artist:4AA8eXtzqh5ykxtafLaPOi",
+          "name": "What So Not"
+        },
+        "context": {
+          "uri": "spotify:album:5FAFTIaf9DBYcmDkYB3F3g",
+          "name": "High You Are (Remixes)",
+          "index": 0
+        }
+      }
+    },
+    {
+      "timestamp": 1644944443483,
+      "user": {
+        "uri": "spotify:user:12122021768",
+        "name": "Andrew Gao",
+        "imageUrl": "https://i.scdn.co/image/ab67757000003b82ee6e36555ce6caf04379121c"
+      },
+      "track": {
+        "uri": "spotify:track:5qnSeoDASVUFJXcVtG3SDr",
+        "name": "Where We Started",
+        "imageUrl": "http://i.scdn.co/image/ab67616d0000b2739d620fa5cd65d2c9ac30bfc6",
+        "album": {
+          "uri": "spotify:album:51vsFjcphwxIXMxXYqrM6c",
+          "name": "High Desert"
+        },
+        "artist": {
+          "uri": "spotify:artist:2uYisEeWBn5hp3e8ObdeUV",
+          "name": "PRXZM"
+        },
+        "context": {
+          "uri": "spotify:playlist:3AWzUU2So5QM9nM7Wk56YN",
+          "name": "SEND MUSIC",
+          "index": 0
+        }
+      }
+    },
+    {
+      "timestamp": 1644944946754,
+      "user": {
+        "uri": "spotify:user:jjiang152",
+        "name": "jjiang152"
+      },
+      "track": {
+        "uri": "spotify:track:4CxmynXhw78QefruycvxG8",
+        "name": "Coffee (feat. Marc E. Bassy)",
+        "imageUrl": "http://i.scdn.co/image/ab67616d0000b273f83dbc7461aefc08696811c0",
+        "album": {
+          "uri": "spotify:album:1dVw3jSdgZp7PfGhCEo32t",
+          "name": "A Letter To My Younger Self"
+        },
+        "artist": {
+          "uri": "spotify:artist:3ApUX1o6oSz321MMECyIYd",
+          "name": "Quinn XCII"
+        },
+        "context": {
+          "uri": "spotify:playlist:1dzwJrh4dWWQZuFtVlZDtM",
+          "name": "~",
+          "index": 0
+        }
+      }
+    }
+  ]
+}

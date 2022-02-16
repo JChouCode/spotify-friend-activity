@@ -1,0 +1,20 @@
+.header {
+  padding-top: 5%;
+  display: flex;
+  margin: auto;
+  padding-bottom: 5%;
+}
+
+.spotify {
+  width: 12%;
+  height: auto;
+}
+
+img {
+  -webkit-backface-visibility: hidden;
+  -ms-transform: translateZ(0);
+  /* IE 9 */
+  -webkit-transform: translateZ(0);
+  /* Chrome, Safari, Opera */
+  transform: translateZ(0);
+}
