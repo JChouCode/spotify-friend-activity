@@ -29,10 +29,10 @@ export default class Friend extends React.Component {
   }
 
   minToTime(min) {
-    if (min > 1440) { // more than a day
+    if (min >= 1440) { // more than a day
       return Math.round(min / 1440) + " days ago"
     }
-    if (min > 60) {
+    if (min >= 60) {
       return Math.round(min / 60) + " hours ago"
     }
     return min + " mins ago"
