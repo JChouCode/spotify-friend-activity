@@ -54,7 +54,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  outline: 2px solid white;
+  outline: 2px solid rgba(255, 255, 255, 0.7);
 }
 
 .profile {
@@ -160,6 +160,87 @@ a:hover {
 
 .playing {
   transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+  margin-top: 10px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.now.playing .bar {
+  display: inline-block;
+  position: relative;
+  margin-right: 2px;
+  width: 3px;
+  height: 1px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.2);
+  color: transparent;
+  animation-name: pulse;
+  animation-duration: 2.1s;
+  animation-iteration-count: infinite;
+  border-radius: 2px;
+}
+
+.n1 {
+  animation-delay: 0.5s;
+}
+
+.n2 {
+  animation-delay: 0.2s;
+}
+
+.n3 {
+  animation-delay: 1.2s;
+}
+
+.n4 {
+  animation-delay: 0.9s;
+}
+
+.n5 {
+  animation-delay: 2.3s;
+}
+
+.n6 {
+  animation-delay: 1.3s;
+}
+
+.n7 {
+  animation-delay: 3.1s;
+}
+
+.n8 {
+  animation-delay: 1.9s;
+}
+
+@keyframes pulse {
+  0% {
+    height: 1px;
+    margin-top: 0;
+  }
+
+  10% {
+    height: 20px;
+    margin-top: -20px;
+  }
+
+  50% {
+    height: 10px;
+    margin-top: -10px;
+  }
+
+  60% {
+    height: 10px;
+    margin-top: -10px;
+  }
+
+  80% {
+    height: 20px;
+    margin-top: -20px;
+  }
+
+  100% {
+    height: 1px;
+    margin-top: 0;
+  }
 }
 
 @media only screen and (max-width: 1260px) {
