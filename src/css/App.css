@@ -5,3 +5,10 @@
   min-height: 100vh;
   background-image: linear-gradient(180deg, rgb(0, 9, 87), black);
 }
+
+@media only screen and (max-width: 1260px) {
+  .App {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
