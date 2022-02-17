@@ -2,5 +2,6 @@
   padding-left: 20%;
   padding-right: 20%;
   margin: auto;
+  min-height: 100vh;
   background-image: linear-gradient(180deg, rgb(0, 9, 87), black);
 }

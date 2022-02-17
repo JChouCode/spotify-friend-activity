@@ -41,7 +41,7 @@ export default class Friend extends React.Component {
           <div className="name">{this.props.name}</div>
         </a>
         <div className="track">
-          <div className="trackCard">
+          <a href={this.props.trackUri} className="trackCard">
             <div className="trackImage">
               <img className="trackImg" src={this.props.trackUrl} alt="track img" />
               <img className="play" src={play} />
@@ -51,7 +51,7 @@ export default class Friend extends React.Component {
               <a href={this.props.artistUri} className="artistName">{this.props.artist}</a>
               <a href={this.props.contextUri} className="contextName">{this.props.context}</a>
             </div>
-          </div>
+          </a>
           <div className="playing">
             {
               this.state.playing ? <div>
