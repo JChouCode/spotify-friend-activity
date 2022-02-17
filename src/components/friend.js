@@ -1,6 +1,7 @@
 import React from 'react';
 import '../css/friend.css'
 import profile from '../assets/default.jpg'
+import play from '../assets/play.png'
 
 export default class Friend extends React.Component {
   constructor(props) {
@@ -20,20 +21,31 @@ export default class Friend extends React.Component {
     }
   }
 
+  minToTime(min) {
+    if (min > 1440) { // more than a day
+      return Math.round(min / 1440) + " days ago"
+    }
+    if (min > 60) {
+      return Math.round(min / 60) + " hours ago"
+    }
+    return min + " mins ago"
+  }
+
   render() {
     return (
       <div className="friend">
-        <div className="user">
-          <a href={this.props.userUri}>
-            <div className="circle">
-              <img className="profile" src={this.props.pic} />
-            </div>
-            <div className="name">{this.props.name}</div>
-          </a>
-        </div>
+        <a className="user" href={this.props.userUri}>
+          <div className="circle">
+            <img className="profile" src={this.props.pic} />
+          </div>
+          <div className="name">{this.props.name}</div>
+        </a>
         <div className="track">
           <div className="trackCard">
-            <img className="trackImg" src={this.props.trackUrl} alt="track img" />
+            <div className="trackImage">
+              <img className="trackImg" src={this.props.trackUrl} alt="track img" />
+              <img className="play" src={play} />
+            </div>
             <div className="trackDetails">
               <a href={this.props.trackUri} className="trackName">{this.props.track}</a>
               <a href={this.props.artistUri} className="artistName">{this.props.artist}</a>
@@ -48,7 +60,7 @@ export default class Friend extends React.Component {
                 <span class="bar n3">c</span>
                 <span class="bar n4">D</span>
                 <span class="bar n5">E</span>
-              </div> : this.state.diff + " mins"
+              </div> : this.minToTime(this.state.diff)
             }
           </div>
         </div>

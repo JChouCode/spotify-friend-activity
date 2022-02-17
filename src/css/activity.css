@@ -1,4 +1,51 @@
 .friend_table {
-  outline: 2px solid white;
+  /* outline: 2px solid white; */
   border-radius: 3px;
+}
+
+.activity {
+  padding-bottom: 90px;
+}
+
+h1 {
+  font-size: 30px;
+  text-shadow: 1px 1px 10px black;
+}
+
+.title {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.live-indicator {
+  font-family: 'Roboto', sans-serif;
+  background: rgb(27, 185, 84);
+  color: white;
+  padding: 6px 7px;
+  line-height: 1;
+  border-radius: 6px;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 12px;
+  font-weight: bold;
+  width: auto;
+  transition: cubic-bezier(0.39, 0.575, 0.565, 1) 0.5s;
+}
+
+.blink {
+  animation: blinker 1s cubic-bezier(0.5, 0, 1, 1) infinite alternate;
+  font-size: 10px;
+  margin-right: 5px;
+  vertical-align: baseline;
+}
+
+@keyframes blinker {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
 }

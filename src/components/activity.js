@@ -1,12 +1,15 @@
 import React from 'react';
 import Friend from './friend'
+import toast from 'react-hot-toast';
 import '../css/activity.css'
+
 const fetch = require('node-fetch');
+
 
 export default class Activity extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { friends: [] };
+    this.state = { friends: [], time: new Date() };
   }
 
   componentDidMount() {
@@ -17,9 +20,19 @@ export default class Activity extends React.Component {
   }
 
   async refreshFriends() {
-    const friends_proxy = await fetch('http://localhost:3000/friends')
-    const friends = await friends_proxy.json();
-    this.setState({ friends: friends.reverse() });
+    try {
+      const friends_proxy = await fetch('http://localhost:3000/friends')
+      const friends = await friends_proxy.json();
+      this.setState({ friends: friends.reverse(), time: new Date() });
+    }
+    catch (err) {
+      toast.error("Fetch failed!");
+    }
+  }
+
+  getLastFetchTime() {
+    let curr = new Date()
+    return (curr - this.state.time) / 1000 + "s"
   }
 
   componentWillUnmount() {
@@ -29,7 +42,15 @@ export default class Activity extends React.Component {
   render() {
     return (
       <div className="activity">
-        <h1>Friend Activity</h1>
+        <div className="title">
+          <h1>Friend activity</h1>
+          <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css"></link>
+          <div class="live-indicator-block">
+            <span class="live-indicator">
+              <i class="fa fa-circle blink" aria-hidden="true"></i>LIVE {this.getLastFetchTime()}
+            </span>
+          </div>
+        </div>
         <div className="friend_table">
           {
             this.state.friends.map(

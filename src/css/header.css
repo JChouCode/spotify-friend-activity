@@ -2,11 +2,11 @@
   padding-top: 5%;
   display: flex;
   margin: auto;
-  padding-bottom: 5%;
+  margin-bottom: 20px;
 }
 
 .spotify {
-  width: 12%;
+  width: 70px;
   height: auto;
 }
 
