@@ -165,7 +165,7 @@ a:hover {
 @media only screen and (max-width: 1260px) {
   .name {
     font-size: 12px;
-    padding-left: 20px;
+    padding-left: 0px;
   }
 
   .friend {
@@ -173,9 +173,7 @@ a:hover {
   }
 
   .circle {
-    height: 20px;
-    width: 20px;
-    outline: white solid 1px;
+    display: none;
   }
 
   .playing {
@@ -184,7 +182,8 @@ a:hover {
   }
 
   .user {
-    margin-left: 0px
+    margin-left: 0px;
+    width: 20%;
   }
 
   .trackDetails {
@@ -219,9 +218,8 @@ a:hover {
     font-size: 7px;
   }
 
-
   .trackCard {
-    width: 160px;
+    width: 60%;
     height: 50%;
   }
 }
