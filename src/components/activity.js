@@ -13,6 +13,7 @@ export default class Activity extends React.Component {
   }
 
   componentDidMount() {
+    this.refreshFriends();
     this.timerID = setInterval(
       () => this.refreshFriends(),
       3000
