@@ -21,7 +21,7 @@ export default class Activity extends React.Component {
 
   async refreshFriends() {
     try {
-      const friends_proxy = await fetch('http://localhost:3000/friends')
+      const friends_proxy = await fetch('https://spotify-friend-proxy.herokuapp.com/friends')
       const friends = await friends_proxy.json();
       this.setState({ friends: friends.reverse(), time: new Date() });
     }
