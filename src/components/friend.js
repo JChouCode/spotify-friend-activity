@@ -1,6 +1,5 @@
 import React from 'react';
 import '../css/friend.css'
-import profile from '../assets/default.jpg'
 import play from '../assets/play.png'
 
 export default class Friend extends React.Component {
@@ -10,6 +9,14 @@ export default class Friend extends React.Component {
   }
 
   componentDidMount() {
+    this.setPlaying()
+    this.timerID = setInterval(
+      () => this.setPlaying(),
+      1000 * 60
+    );
+  }
+
+  setPlaying() {
     let time = new Date(this.props.timestamp);
     let current = new Date();
     let diff = parseInt((current - time) / 1000 / 60) // diff in minutes
@@ -54,13 +61,15 @@ export default class Friend extends React.Component {
           </a>
           <div className="playing">
             {
-              this.state.playing ? <div>
-                <span class="bar n1">A</span>
-                <span class="bar n2">B</span>
-                <span class="bar n3">c</span>
-                <span class="bar n4">D</span>
-                <span class="bar n5">E</span>
-              </div> : this.minToTime(this.state.diff)
+              this.state.playing ?
+                <div className="now playing" id="music">
+                  <span class="bar n1">A</span>
+                  <span class="bar n2">B</span>
+                  <span class="bar n3">c</span>
+                  <span class="bar n4">D</span>
+                  <span class="bar n5">E</span>
+                </div>
+                : this.minToTime(this.state.diff)
             }
           </div>
         </div>
