@@ -2,7 +2,7 @@
   display: flex;
   /* border-bottom: 2px solid white; */
   padding-left: 30px;
-  /* padding-right: 30px; */
+  padding-right: 30px;
   border-radius: 7px;
   margin-bottom: 12px;
   box-shadow: 0px 0px 10000px black;
@@ -79,9 +79,9 @@
 
 .track {
   height: 100%;
-  width: 80%;
+  width: 60%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
 }
 
