@@ -251,6 +251,7 @@ a:hover {
 
   .friend {
     padding-left: 25px;
+    padding-right: 25px;
   }
 
   .circle {
@@ -300,7 +301,11 @@ a:hover {
   }
 
   .trackCard {
-    width: 60%;
+    width: 70%;
     height: 50%;
+  }
+
+  .track {
+    width: 75%;
   }
 }
