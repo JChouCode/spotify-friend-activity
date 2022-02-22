@@ -269,14 +269,15 @@ a:hover {
   }
 
   .trackDetails {
-    padding-left: 15px;
+    padding-left: 12px;
+    padding-right: 20px;
   }
 
   .trackName {
     display: block;
     overflow: hidden;
     white-space: nowrap;
-    width: 65px;
+    width: 63px;
     height: 10px;
     text-overflow: ellipsis;
     font-size: 9px;
@@ -286,7 +287,7 @@ a:hover {
     display: block;
     overflow: hidden;
     white-space: nowrap;
-    width: 70px;
+    width: 63px;
     text-overflow: ellipsis;
     font-size: 7px;
   }
@@ -295,17 +296,17 @@ a:hover {
     display: block;
     overflow: hidden;
     white-space: nowrap;
-    width: 70px;
+    width: 63px;
     text-overflow: ellipsis;
     font-size: 7px;
   }
 
   .trackCard {
-    width: 65%;
+    width: 69%;
     height: 50%;
   }
 
   .track {
-    width: 70%;
+    width: 75%
   }
 }
