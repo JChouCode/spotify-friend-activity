@@ -1,6 +1,5 @@
 .friend {
   display: flex;
-  /* border-bottom: 2px solid white; */
   padding-left: 30px;
   padding-right: 30px;
   border-radius: 7px;
@@ -134,11 +133,18 @@
   padding-left: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
+  width: 55%;
 }
 
 .trackName {
+  overflow: hidden;
+  text-overflow: ellipsis;
   font-size: 15px;
   font-weight: bold;
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  width: 100%;
 }
 
 .artistName {
