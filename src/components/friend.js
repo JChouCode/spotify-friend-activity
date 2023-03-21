@@ -12,7 +12,7 @@ export default class Friend extends React.Component {
     this.setPlaying()
     this.timerID = setInterval(
       () => this.setPlaying(),
-      1000
+      100000
     );
   }
 

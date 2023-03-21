@@ -1,4 +1,4 @@
-# fly.toml file generated for spotify-friend-activity on 2023-03-21T02:26:32-07:00
+# fly.toml file generated for spotify-friend-activity on 2023-03-21T02:30:19-07:00
 
 app = "spotify-friend-activity"
 kill_signal = "SIGINT"
