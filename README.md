@@ -1,6 +1,6 @@
 # Spotify Friend Activity
 
-Hosted on heroku [here](https://spotify-friend-activity.herokuapp.com/). 
+Hosted on heroku [here](https://spotify-friend-activity.onrender.com/). 
 
 Currently only shows my friends, but can later be adjusted for other users.
 
