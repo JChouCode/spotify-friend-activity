@@ -1,6 +1,8 @@
 # Spotify Friend Activity
 
-Hosted on Render [here](https://spotify-friend-activity.onrender.com/).  Note: it may take a while for it to load (like <3 mins) since I'm on the free plan and Render decomissions my server if theres no activity for 30 mins!
+Hosted on Vercel [here](https://spotify-friend-activity-jchoucode.vercel.app/)!
+
+Also hosted on Render [here](https://spotify-friend-activity.onrender.com/).  Note: it may take a while for it to load (like <3 mins) since I'm on the free plan and Render decomissions my server if theres no activity for 30 mins!
 
 Currently only shows my friends, but can later be adjusted for other users.
 
